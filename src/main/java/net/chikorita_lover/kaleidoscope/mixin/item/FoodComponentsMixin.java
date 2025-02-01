@@ -11,9 +11,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(FoodComponents.class)
 public class FoodComponentsMixin {
-    @Shadow @Final public static FoodComponent COOKIE;
-    @Shadow @Final public static FoodComponent GLOW_BERRIES;
-    @Shadow @Final public static FoodComponent SWEET_BERRIES;
+    @Shadow 
+    @Final 
+    public static FoodComponent COOKIE;
+    @Shadow 
+    @Final 
+    public static FoodComponent GLOW_BERRIES;
+    @Shadow
+    @Final 
+    public static FoodComponent SWEET_BERRIES;
 
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void modifyFoodComponents(CallbackInfo ci) {
