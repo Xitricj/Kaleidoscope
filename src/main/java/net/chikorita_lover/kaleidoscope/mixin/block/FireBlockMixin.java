@@ -20,7 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(FireBlock.class)
 public class FireBlockMixin {
     @Unique
-    private static final float CRACK_CHANCE = 0.33333333F;
+    private static final float CRACK_CHANCE = 0.29999999F;
 
     @Inject(method = "trySpreadingFire", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;getBlockState(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;", ordinal = 1, shift = At.Shift.AFTER), cancellable = true)
     private void tryBurningToCharcoal(World world, BlockPos pos, int spreadFactor, Random random, int currentAge, CallbackInfo ci) {
