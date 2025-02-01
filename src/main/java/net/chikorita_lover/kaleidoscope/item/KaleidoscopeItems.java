@@ -49,7 +49,7 @@ public class KaleidoscopeItems {
     }
 
     public static void registerFuels() {
-        FuelRegistry.INSTANCE.add(KaleidoscopeBlocks.CHARCOAL_BLOCK, 8000);
+        FuelRegistry.INSTANCE.add(KaleidoscopeBlocks.CHARCOAL_BLOCK, 2400);
         FuelRegistry.INSTANCE.add(KaleidoscopeBlocks.STICK_BLOCK, 1000);
     }
 }
